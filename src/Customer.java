@@ -94,7 +94,7 @@ public class Customer {
     }
     private void register()
     {
-        System.out.println("enter username:");
+        System.out.println("enter username:");//
         Scanner in = new Scanner(System.in);
         username = in.next();
         while (isUsed(username)==true)
