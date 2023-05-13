@@ -132,6 +132,21 @@ public class Customer {
         address=scanner.nextLine();
         System.out.println("enter your phone number:");
         phone_num= in.next();
+        /*
+         emailOtp otp = new emailOtp(email);
+
+        int code = otp.sendOTP(); // send OTP code to user's email
+
+        boolean otpVerified = false;
+        while (!otpVerified) {
+            otpVerified = otp.verifyOTP(code);
+            if (!otpVerified) {
+                System.out.println("The OTP code sent to " + email + " is not correct. We will send another one.");
+                code = otp.sendOTP(); // send another OTP code if the first one was incorrect
+            }
+        }
+        System.out.println("OTP code is correct");
+        */
         try {
             FileWriter fw=new FileWriter("customers.txt",true);
             BufferedWriter bw=new BufferedWriter(fw);
